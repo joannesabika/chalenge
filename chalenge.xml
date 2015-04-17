@@ -1,1 +1,69 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_forward" id="10" x="96" y="47">
+    <next>
+      <block type="robot_delay" id="12" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="19">
+            <field name="NUM">2000</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_stop" id="29">
+            <next>
+              <block type="led_select" id="38" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="math_number" id="45">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="robot_delay" id="56" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="63">
+                        <field name="NUM">200</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="led_select" id="72" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="math_number" id="79">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_cleardisplay" id="88">
+                            <next>
+                              <block type="oled_setcursor" id="97" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="104">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="105">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_drawtext" id="114">
+                                    <field name="TEXT">hi</field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
