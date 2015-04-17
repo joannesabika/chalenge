@@ -64,7 +64,10 @@
                                             </value>
                                             <next>
                                               <block type="oled_drawtext" id="114">
-                                                <field name="TEXT">hey</field>
+                                                <field name="TEXT">hillo</field>
+                                                <next>
+                                                  <block type="movement_stop" id="176"></block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
